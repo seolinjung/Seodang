@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+
+* {
+    /*margin-left: 50px;*/
+}
+
+/*
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+*/
+
+.title-box {
+
+}
+
+.hanja-title {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+    top: 8px;
+}
+
+.hangul-title {
+    font-family: 'Gowun Batang';
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.latin {
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 400;
+    margin-left: 50px;
+}
