@@ -2,14 +2,19 @@
 
 <!doctype html>
 <html lang="en-CA">
-    <head>
+    <header>
+        <h1 class="logo"><span class="hangul-title">서</span><span class="hanja-title">書</span><span class="hangul-title">당</span><span class="hanja-title">堂</span></h1>
+        <h5 class="subtitle">Seodang: the Hangul-Hanja converter</h5>
         <!--inter-->
         <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
         <meta charset="utf-8">
         <title>Seodang</title>
-    </head>
+    </header>
     <body>
     {% block content %}
     {% endblock %}
     </body>
+    <footer>
+        <p><a href="https://github.com/seolinjung">Seolin Jung</a></p>
+    </footer>
 </html>

@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 
+a { color:black } 
+
+a:visited { 
+    text-decoration: none; color:black; 
+}
+
 h1, p {
     margin-left: 200px;
 }
@@ -60,6 +66,7 @@ h5 {
 }
 
 input {
+    size: auto;
     width: 60%;
     border: none;
     border-bottom: 2px solid black;
@@ -71,4 +78,20 @@ input {
     background-color: #a6a6a6;
     border: none;
     margin-left: 890px;
+}
+
+img {
+    max-width: 20%;
+    max-height: 20%;
+    margin-right: 150px;
+  }
+
+footer {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 1005px;
 }
