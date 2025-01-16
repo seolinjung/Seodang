@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 
-* {
-    /*margin-left: 50px;*/
+h1, p {
+    margin-left: 200px;
 }
 
 /*
@@ -17,11 +17,10 @@
 }
 */
 
-.title-box {
-
-}
-
 .hanja-title {
+    text-decoration: underline;
+    text-decoration-color: #a6a6a6;
+    text-underline-offset: 4px;
     font-family: 'Noto Serif TC', serif;
     font-weight: 400;
     font-size: 24px;
@@ -30,6 +29,11 @@
 }
 
 .hangul-title {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #ffad99;
     font-family: 'Gowun Batang';
     font-weight: 400;
     font-size: 30px;
@@ -38,9 +42,33 @@
 .latin {
     font-family: 'Inter';
     font-weight: 400;
+    font-size: 16px;
 }
 
 h1 {
     font-weight: 400;
-    margin-left: 50px;
+    margin-top: 50px;
+}
+
+h5 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 220px;
+    margin-bottom: 50px;
+}
+
+input {
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 12px 8px;
+}
+
+.button {
+    font-size: 16px;
+    background-color: #a6a6a6;
+    border: none;
+    margin-left: 890px;
 }

@@ -1,0 +1,14 @@
+{% extends 'homepage/index.html' %}
+
+{% block content %}
+    <h1 class="logo"><span class="hangul-title">서</span><span class="hanja-title">書</span><span class="hangul-title">당</span><span class="hanja-title">堂</span></h1>
+    <h5 class="subtitle">Seodang: the Hangul-Hanja converter</h5>
+    <img src="static/images/kimhongdo.jpg" alt="Kim Hong-Do">
+    <p class="latin">Did you know? Around 60% of Korean vocabulary derives from Hanja.<br> Understand the origin of the Korean words you study.</p>
+    <p class="latin">Enter a Korean sentence below.</p>
+    <form action="{% url 'homepage' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="button">convert</button>
+    </form>
+{% endblock %}
