@@ -9,11 +9,16 @@ def index(request):
     if request.method == "POST":
         form = InputForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect('result')
+            form_data = form.save()
+            
+            return render(request, 'homepage/result.html', {"result": form_data})
+            # return redirect('result')
     else:
         form = InputForm()
     return render(request, 'homepage/homepage.html', {"form": form})
 
 def result(request):
-    return HttpResponse("result")
+    # return render(request, 'hompage/results.html', {"result", form.cleaned_data})
+    # recent_sentence = Input.objects.filter()
+
+     return HttpResponse("result")
