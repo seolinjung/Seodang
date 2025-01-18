@@ -10,6 +10,7 @@ konlpy = "*"
 langdetect = "*"
 requests = "*"
 django-widget-tweaks = "*"
+hanja = "*"
 
 [dev-packages]
 

@@ -10,19 +10,10 @@ a:visited {
     text-decoration: none; color:black; 
 }
 
-h1, p, .input-text {
+h1, p, .input-text, .result-latin {
 
     margin-left: 200px;
 }
-
-/*
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 10px;
-}
-*/
 
 .hanja-title {
     text-decoration: underline;
@@ -69,15 +60,15 @@ h5 {
 input {
     border: none;
     border-bottom: 2px solid black;
-    padding: 12px 8px;
+    padding: 8px 8px;
 }
 
 .button {
     font-size: 16px;
     background-color: #a6a6a6;
     border: none;
-    margin-left: 890px;
-    top: 4px;
+    margin-left: 715px;
+    margin-top: 12px;
 }
 
 img {
@@ -96,16 +87,24 @@ footer {
     left: 1005px;
 }
 
-.result {
-    font-family: 'Noto Serif';
-    font-weight: 400;
-    font-size: 24px;
-}
-
 .input-text {
     font-family: 'Noto Sans KR';
     font-weight: 400;
     font-size: 16px;
-    width: 50%;
+    width: 45%;
     padding-bottom: 4px;
+}
+
+.result-latin {
+    font-family: 'Inter';
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+.result-mixed {
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 12px;
+
 }

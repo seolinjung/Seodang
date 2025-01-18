@@ -3,6 +3,7 @@ import requests
 import krdict
 import urllib.request
 import json
+import hanja
 
 # from bs4 import BeautifulSoup
 
@@ -31,13 +32,15 @@ def convert_sentence(sentence):
     kkma = Kkma()
 
     broken_sentence = kkma.pos(sentence)
-    print("broken sentence is", broken_sentence)
-    new_sentence = []
+    list_sentence = list(sentence)
 
-    for word in broken_sentence:
-        word_to_append = word[0]
-        if (word[1][0] == 'N'):
-            word_to_append = convert_word(word[0])
-        new_sentence.append(word_to_append)
-    return " ".join(new_sentence)
+    for hangul_word in broken_sentence:
+        if (hangul_word[1][0] == 'N'):
+            converted_word = convert_word(hangul_word[0])
+            if hanja.is_hanja(converted_word[0]) == True:
+                start_id = sentence.index(hangul_word[0])
+                end_id = start_id - 1 + len(hangul_word[0])
+                list_sentence[start_id:end_id+1] = converted_word
+
+    return "".join(list_sentence)
 

@@ -7,6 +7,6 @@
     <form class="input-form" action="{% url 'homepage' %}" method="post">
         {% csrf_token %}
         {% render_field form.text placeholder="한글로 문장을 입력해주세요" class="input-text" %}
-        <button type="submit" class="button">convert</button>
+        <button type="submit" class="button">hanja-ify</button>
     </form>
 {% endblock %}

@@ -3,8 +3,9 @@
 {% block content %}
 
     <div class="result">
-        <p class="latin">Your converted sentence is: </p>
-        {{ result }}
+        <p class="result-latin">Successfully Hanja-ified! <br><br>
+            <span class="result-mixed"> [ {{ origin }} ] <br> &rarr; [ {{ result }} ] </span>
+        </p>
     </div>
 
 {% endblock %}

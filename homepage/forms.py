@@ -18,8 +18,8 @@ class InputForm(ModelForm):
         text = cleaned_data.get("text")
         
         # if input sentence is not hangul
-        detect_result = detect(text)
-        if (detect_result != 'ko'):
-            raise ValidationError("The given input is not Korean.")
+        # detect_result = detect(text)
+        # if (detect_result != 'ko'):
+        #     raise ValidationError("The given input is not Korean.")
         
         return cleaned_data
