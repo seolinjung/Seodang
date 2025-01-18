@@ -37,8 +37,6 @@ def convert_sentence(sentence):
     for word in broken_sentence:
         word_to_append = word[0]
         if (word[1][0] == 'N'):
-        # print("this word is", word[0])
-        # print("attempted to convert to", convert_word(word[0]))
             word_to_append = convert_word(word[0])
         new_sentence.append(word_to_append)
     return " ".join(new_sentence)
