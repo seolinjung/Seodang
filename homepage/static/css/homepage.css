@@ -15,6 +15,10 @@ h1, p, .input-text, .result-latin {
     margin-left: 200px;
 }
 
+.yellow {
+    background-color: #FBC02D;
+}
+
 .hanja-title {
     text-decoration: underline;
     text-decoration-color: #a6a6a6;

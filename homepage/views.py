@@ -20,6 +20,10 @@ def index(request):
                 output = "The sentence you entered is not in Korean. Refresh this page." 
             else:
                 output = to_hanja.convert_sentence(input.text)
+                broken_pairs = to_hanja.break_down(input.text, output)
+
+
+
             return render(request, 'homepage/result.html', {"origin": input.text, "result": output})
             # return redirect('result')
     else:

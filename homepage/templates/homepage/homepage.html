@@ -2,7 +2,7 @@
 {% load widget_tweaks %}
 
 {% block content %}
-    <p class="latin">Did you know? Around 60% of Korean vocabulary derives from Hanja.<br> Understand the origin of the Korean words you study.</p>
+    <p class="latin"><i>Did you know?</i> Around 60% of Korean vocabulary derives from Hanja.<br> Understand the origin of the Korean words you study.</p>
     <p class="latin">Enter a Korean sentence below.</p>
     <form class="input-form" action="{% url 'homepage' %}" method="post">
         {% csrf_token %}
