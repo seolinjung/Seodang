@@ -53,7 +53,7 @@ python manage.py runserver
 
 The picture used is of the late 18th century painting by Joseon dynasty painter Kim Hong-Do, titled *Seodang*.  
 
-KoNLPy was essential for the natural language processing asepct of this project. Attributions are as follows: 
+KoNLPy was essential for the natural language processing aspect of this project. Attributions are as follows: 
 
 - Eunjeong L. Park, Sungzoon Cho. “KoNLPy: Korean natural language processing in Python”, Proceedings of the 26th Annual Conference on Human & Cognitive Language Technology, Chuncheon, Korea, Oct 2014.
 
