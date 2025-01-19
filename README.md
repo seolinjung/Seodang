@@ -28,7 +28,7 @@ python -c 'from django.core.management.utils import get_random_secret_key; print
 
 And for the Korean Learners' Dictionary API, you'll have to visit their [Open API link](https://krdict.korean.go.kr/openApi/openApiInfo) and follow instructions there. 
 
-You'll have to migrate settings for the SQLite databse, which you can do with
+You'll have to migrate settings for the SQLite database, which you can do with
 
 
 ```
