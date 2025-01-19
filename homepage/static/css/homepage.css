@@ -41,7 +41,7 @@ h1, p, .input-text, .result-latin {
     font-size: 30px;
 }
 
-.latin {
+.latin, .caption {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
@@ -79,16 +79,6 @@ img {
     max-width: 20%;
     max-height: 20%;
     margin-right: 150px;
-  }
-
-footer {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 1005px;
 }
 
 .input-text {
